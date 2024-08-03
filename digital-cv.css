@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  border-bottom: #c1c1c1 solid 1px;
+}
+/* fontsize small */
+.team p,
+.goals p,
+.timeline p,
+.scopes p,
+.primary p {
+  font-size: small;
+}
+
+/* goals border */
+.goals .border--bottom {
+  border-bottom: #e6e6e6 solid 1px;
+}
+
+/* container-width */
+.container-custom1 {
+  width: 75%;
+  transition: width 0.3s;
+}
+
+.container-custom2 {
+  width: 25%;
+  transition: width 0.3s;
+}
+
+/* TIMELINE */
+
+.timeline .border--bottom {
+  border-bottom: #09a2e9 dotted 1px;
+}
+
+.circle {
+  background-color: rgb(192, 151, 230);
+  width: 3rem;
+  height: 3rem;
+  border: #7c7b7b solid 1px;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  /* vertical-align: baseline; */
+  padding: 0.5rem;
+}
+
+/* MEDIA QUERY */
+/*screen size  sm576-md768-lg992-xl1200 */
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (max-width: 992px) {
+  body {
+    max-width: 768px;
+    margin: auto;
+  }
+  .container-custom1,
+  .container-custom2 {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  body {
+    width: 360px;
+    margin: auto;
+  }
+  .container-custom1,
+  .container-custom2 {
+    width: 100%;
+  }
+}

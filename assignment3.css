@@ -1,0 +1,204 @@
+* {
+  font-family: "Times New Roman", Times, serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*  BANNER STYLE */
+.banner a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #555353;
+}
+
+/*  INFORMATION STYLE */
+
+.information i,
+.banner i {
+  color: #0a55c7;
+}
+.information .card1 {
+  background-color: #f9f9f9;
+}
+.information .card2 {
+  background-color: #f3f3f3;
+}
+
+.hidden {
+  display: none;
+}
+
+/* MAIN -INFORMATION STYLE */
+.main-information i {
+  color: #777;
+  font-size: 50px;
+}
+.main-information button i {
+  font-size: small;
+}
+.main-information ul li {
+  position: relative;
+  list-style-type: none;
+}
+.main-information h6::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -30px;
+  width: 10px;
+  height: 10px;
+  background-color: #13a4dd;
+  border-radius: 50%;
+}
+.main-information span {
+  background-color: #13a4dd;
+  padding: 1px 5px;
+  border-radius: 5px;
+  color: aliceblue;
+}
+
+.experience,
+.education,
+.activity,
+.hobby,
+.language,
+.skills {
+  border: 1px solid;
+}
+
+/* VIEW MORE */
+.read-more-text {
+  display: none;
+}
+.read-more-text--show {
+  display: inline;
+}
+.read-more-btn {
+  opacity: 0;
+  transition: opacity 0, 8s ease;
+}
+
+.experience:hover .read-more-btn,
+.education:hover .read-more-btn,
+.activity:hover .read-more-btn,
+.hobby:hover .read-more-btn,
+.language:hover .read-more-btn,
+.skills:hover .read-more-btn {
+  opacity: 1; /* Hiển thị nút khi hover qua phần tử cha */
+}
+/* HOPPY STYLE */
+
+.hobby-icon i {
+  color: #13a4dd;
+  font-size: 25px;
+}
+.ic-megaphone,
+.ic-strategy,
+.ic-hotairballoon,
+.ic-basket {
+  color: #13a4dd;
+  border: 1px solid #13a4dd;
+  border-radius: 50%;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+/* LANGUAGE SKILL STYLE */
+.language span,
+.skills span {
+  display: inline-block;
+  width: 60px;
+  height: 2px;
+  background-color: #c6c6c6;
+  margin-left: 5px;
+}
+
+#blue-color {
+  background-color: #13a4dd;
+}
+
+/*  PROJECT STYLE */
+.project .box2 div:first-child p {
+  background-color: #13a4dd;
+  border-radius: 15px;
+  height: 25px;
+  width: 50px;
+  color: #fff;
+}
+.project {
+  border: #c6c6c6 solid 1px;
+}
+.project .img-box,
+.project .box1,
+.project .box2,
+.project .box3,
+.project .box4 {
+  border-bottom: #c6c6c6 solid 1px;
+}
+
+.project .box2,
+.project .box3,
+.project .box4,
+.project .box5,
+.footer div span {
+  color: #777;
+}
+
+/* FOOTER */
+
+.footer i {
+  font-size: 250%;
+}
+
+/* MEDIA QUERY */
+/*screen size  sm576-md768-lg992-xl1200 */
+@media only screen and (min-width: 768px) {
+  .bg-image {
+    height: 400px;
+    background-size: cover;
+    background-image: url("/images/banner.jpg");
+
+    z-index: -100;
+  }
+  .banner p {
+    border-left: 1px solid #ece9e9;
+    border-right: 1px solid #ece9e9;
+  }
+
+  /* <!-- CERTIFICATES --> */
+  .certificates .box1,
+  .certificates .box2 {
+    border-bottom: orange solid 1px;
+  }
+
+  .certificates .box2 > div {
+    border-left: orange solid 1px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    width: 360px;
+    margin: auto;
+  }
+
+  .bg-image {
+    height: 200px;
+    background-size: cover;
+    background-image: url("/images/banner.jpg");
+    /* filter: brightness(50%); */
+    z-index: -100;
+  }
+  .banner p {
+    font-size: large;
+  }
+  .footer div span {
+    display: none;
+  }
+  /* <!-- CERTIFICATES --> */
+  .certificates .box1,
+  .certificates .box2 {
+    border-bottom: orange solid 1px;
+  }
+}
